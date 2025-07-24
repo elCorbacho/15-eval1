@@ -10,14 +10,12 @@ Route::get('/', function () {
 
 // ruta para el controlador RutaController
 Route::get('get', [RutaController::class, 'get']);
-
-
 Route::get('/usuario/{nombre}/{email}/{telefono}', [RutaController::class, 'usuario']);
-
 Route::get('/nuevo/{nombre}/{email}/{telefono}', [RutaController::class, 'nuevo']);
 
 
 //post
 Route::post('post', [RutaController::class, 'post']);
+
 
 
