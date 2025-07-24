@@ -45,6 +45,22 @@ class RutaController extends Controller
         return view('usuario', compact('usuario'));
     }
 
+    public function proyecto($id, $nombre, $fecha_inicio, $estado, $responsable, $monto)
+    {
+        // Logic for the 'proyecto' method
+        ##dd($nombre);
+        #return "Nombre: $nombre, Email: $email, Telefono: $telefono";
+        $proyecto = new Proyecto();
+        $proyecto->id = $id;
+        $proyecto->nombre = $nombre;
+        $proyecto->fecha_inicio = $fecha_inicio;
+        $proyecto->estado = $estado;
+        $proyecto->responsable = $responsable;
+        $proyecto->monto = $monto;
+        #$proyecto->save();
+        dd($proyecto);
+    }
+
 
 
     public function post(Request $request)
