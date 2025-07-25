@@ -33,7 +33,7 @@ Route::delete('proyecto/{id}', [ProyectoController::class, 'delete']);
 
 
 // get all proyectos
-Route::get('proyecto', [ProyectoController::class, 'get']);
+//Route::get('proyecto', [ProyectoController::class, 'get']);
 
 // ruta para el controlador ProyectoController
-Route::get('proyecto', [ProyectoController::class, 'get']);
+//Route::get('proyecto', [ProyectoController::class, 'get']);

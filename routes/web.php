@@ -22,7 +22,7 @@ Route::get('proyecto', [ProyectoController::class, 'get']);
 #Route::post('proyecto', [ProyectoController::class, 'post']);
 
 //delete por id
-Route::delete('proyecto/{id}', [ProyectoController::class, 'delete']);
+//Route::delete('proyecto/{id}', [ProyectoController::class, 'delete']);
 
 //patch por id
 //Route::patch('proyecto/{id}', [ProyectoController::class, 'update']);
