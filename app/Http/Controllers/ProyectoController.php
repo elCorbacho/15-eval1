@@ -20,7 +20,7 @@ class ProyectoController extends Controller
     }
 
     //----------------------------------------
-    //METODO GET CON DATOS EN DURO
+    //METODO GET CON DATOS EN DURO JSON
     //----------------------------------------
     public function get()
     {
@@ -42,7 +42,9 @@ class ProyectoController extends Controller
             'monto' => 20000
         ]
     ];
-    return response()->json($proyectos, 200);
+    //return response()->json($proyectos, 200);
+    $proyecto = $proyectos[0];
+    return view('obtener_proyectos', compact('proyectos'));
     }
 
 
