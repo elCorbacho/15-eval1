@@ -4,6 +4,7 @@
 
 @section('content')
 <h2>Crear Proyecto</h2>
+
 <form action="{{ url('/proyectos') }}" method="POST">
     @csrf
     <div class="mb-3">

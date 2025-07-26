@@ -1,0 +1,42 @@
+[
+    {
+        "id": 2,
+        "nombre": "App de Reservas",
+        "fecha_inicio": "2025-02-05",
+        "estado": "En espera",
+        "responsable": "Carlos Pérez",
+        "monto": 22000
+    },
+    {
+        "id": 3,
+        "nombre": "Web Corporativa4",
+        "fecha_inicio": "2025-03-01",
+        "estado": "Finalizado",
+        "responsable": "Ana Torres",
+        "monto": "0909"
+    },
+    {
+        "id": 4,
+        "nombre": "Plataforma E-learningg444ggggg",
+        "fecha_inicio": "2025-04-15",
+        "estado": "Activo",
+        "responsable": "Miguel Rojas",
+        "monto": "30000"
+    },
+    {
+        "id": 5,
+        "nombre": "Sistema de Facturación",
+        "fecha_inicio": "2025-05-20",
+        "estado": "Activo",
+        "responsable": "Sofía Ramírez",
+        "monto": "250000000000"
+    },
+    {
+        "id": 6,
+        "nombre": "090909",
+        "fecha_inicio": "2025-07-23",
+        "estado": "activo",
+        "responsable": "qwqw",
+        "monto": "10920909"
+    }
+]
