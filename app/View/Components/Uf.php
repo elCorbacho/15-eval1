@@ -9,9 +9,12 @@ class Uf extends Component
 {
     public float|null $valorUf;
 
-    public function __construct()
+    public function __construct(UfService $ufService)
     {
-        $this->valorUf = (new UfService())->obtenerValorUf();
+        // Usar caché para evitar múltiples llamadas a la API
+        $this->valorUf = cache()->remember('valor_uf', 3600, function () use ($ufService) {
+            return $ufService->obtenerValorUf();
+        });
     }
 
     public function render()
