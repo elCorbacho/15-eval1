@@ -51,7 +51,7 @@ Aplicación web desarrollada con Laravel para la gestión de proyectos mediante 
 
 ## 🌐 Uso
 
-Accede a la aplicación en [http://localhost:8000](http://localhost:8000).
+Accede a la aplicación en [http://eval1-web.test/proyectos](http://eval1-web.test/proyectos).
 
 ## 📡 Endpoints principales
 
