@@ -6,7 +6,8 @@ use App\Http\Controllers\ProyectoController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return redirect('/proyectos');
 });
 
 // ruta para el controlador RutaController

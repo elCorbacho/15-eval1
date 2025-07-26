@@ -68,8 +68,9 @@ class ProyectoController extends Controller
         // Guardar el array actualizado en el archivo JSON
         file_put_contents($ruta, json_encode($proyectos, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-        // Redirigir a la lista de proyectos
-        return redirect('/proyectos');
+        // Redirigir de vuelta al formulario con los datos del proyecto creado para el modal
+        return redirect()->back()->with('proyecto_creado', $proyecto);
+
     }
 
 
@@ -127,7 +128,8 @@ class ProyectoController extends Controller
         $index = array_search($id, array_column($proyectos, 'id'));
 
         if ($index === false) {
-            return redirect('/proyectos')->with('error', 'Proyecto no encontrado');
+            // Redirigir a la vista de eliminar con mensaje de error
+            return redirect()->back()->with('error', 'Proyecto no encontrado');
         }
 
         // Eliminar el proyecto del arreglo
@@ -136,7 +138,8 @@ class ProyectoController extends Controller
         // Guardar el array actualizado en el archivo JSON
         file_put_contents($ruta, json_encode($proyectos, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-        return redirect('/proyectos')->with('success', 'Proyecto eliminado');
+        // Redirigir de vuelta a la vista de eliminar con mensaje de éxito
+        return redirect()->back()->with('success', 'Proyecto eliminado');
     }
 
 
