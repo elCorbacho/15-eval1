@@ -1,15 +1,15 @@
-# Eval1-Web
+# 🚀 Eval1-Web
 
 Aplicación web desarrollada con Laravel para la gestión de proyectos mediante una API RESTful y una interfaz web.
 
-## Requisitos
+## 📋 Requisitos
 
-- **PHP** >= 8.1
-- **Composer**
-- **MySQL/MariaDB**
-- **Node.js** y **npm** (opcional para frontend)
+- ✅ **PHP** >= 8.1
+- ✅ **Composer**
+- ✅ **MySQL/MariaDB**
+- ✅ **Node.js** y **npm** *(opcional para frontend)*
 
-## Instalación
+## ⚙️ Instalación
 
 1. **Clona el repositorio:**
    ```bash
@@ -49,40 +49,40 @@ Aplicación web desarrollada con Laravel para la gestión de proyectos mediante 
    php artisan serve
    ```
 
-## Uso
+## 🌐 Uso
 
 Accede a la aplicación en [http://localhost:8000](http://localhost:8000).
 
-## Endpoints principales
+## 📡 Endpoints principales
 
 ### **Endpoints API** (`routes/api.php`)
 
-| Método  | Endpoint              | Descripción                        |
-|---------|-----------------------|------------------------------------|
-| **POST**    | `/api/proyecto`         | Crear un nuevo proyecto            |
-| **PATCH**   | `/api/proyecto/{id}`    | Actualizar proyecto por ID         |
-| **DELETE**  | `/api/proyecto/{id}`    | Eliminar proyecto por ID           |
-| **GET**     | `/api/user`             | Obtener usuario autenticado (Sanctum) |
+| 🌐 Método  | 📍 Endpoint              | 📝 Descripción                        |
+|------------|--------------------------|---------------------------------------|
+| **POST**   | `/api/proyecto`          | Crear un nuevo proyecto               |
+| **PATCH**  | `/api/proyecto/{id}`     | Actualizar proyecto por ID            |
+| **DELETE** | `/api/proyecto/{id}`     | Eliminar proyecto por ID              |
+| **GET**    | `/api/user`              | Obtener usuario autenticado (Sanctum) |
 
 > **Nota:** Los endpoints GET para listar y obtener proyectos por ID están comentados en `api.php`. Si deseas activarlos, descomenta las líneas correspondientes.
 
 ### **Endpoints Web** (`routes/web.php`)
 
-| Método  | Endpoint              | Descripción                        |
-|---------|-----------------------|------------------------------------|
-| **GET**     | `/`                     | Página principal (welcome)         |
-| **GET**     | `/proyectos`            | Listar todos los proyectos         |
-| **GET**     | `/proyectos/crear`      | Formulario para crear un proyecto  |
-| **POST**    | `/proyectos`            | Guardar un nuevo proyecto          |
-| **GET**     | `/proyectos/eliminar`   | Formulario para eliminar un proyecto |
-| **POST**    | `/proyectos/eliminar`   | Eliminar un proyecto               |
-| **GET**     | `/proyectos/editar/{id}`| Formulario para editar un proyecto |
-| **PATCH**   | `/proyectos/editar/{id}`| Actualizar un proyecto             |
+| 🌐 Método  | 📍 Endpoint              | 📝 Descripción                        |
+|------------|--------------------------|---------------------------------------|
+| **GET**    | `/`                      | Página principal (welcome)            |
+| **GET**    | `/proyectos`             | Listar todos los proyectos            |
+| **GET**    | `/proyectos/crear`       | Formulario para crear un proyecto     |
+| **POST**   | `/proyectos`             | Guardar un nuevo proyecto             |
+| **GET**    | `/proyectos/eliminar`    | Formulario para eliminar un proyecto  |
+| **POST**   | `/proyectos/eliminar`    | Eliminar un proyecto                  |
+| **GET**    | `/proyectos/editar/{id}` | Formulario para editar un proyecto    |
+| **PATCH**  | `/proyectos/editar/{id}` | Actualizar un proyecto                |
 
-## Contribuir
+## 🤝 Contribuir
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request.
 
-## Licencia
+## 📜 Licencia
 
 Este proyecto utiliza el framework Laravel, licenciado bajo [MIT](https://opensource.org/licenses/MIT).
