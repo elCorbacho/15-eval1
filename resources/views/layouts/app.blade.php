@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body class="bg-light">
@@ -42,7 +47,55 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card shadow-sm p-4">
-                    <div>@yield('content')</div>
+                    <div id="main-content" class="fade-transition fade-in-onload">@yield('content')</div>
+    <style>
+    .fade-transition {
+        opacity: 1;
+        transition: opacity 0.3s cubic-bezier(.4,0,.2,1);
+    }
+    .fade-transition.fade-out {
+        opacity: 0;
+    }
+    .fade-in-onload {
+        opacity: 0;
+        animation: fadeInProgressive 0.6s cubic-bezier(.4,0,.2,1) forwards;
+    }
+    @keyframes fadeInProgressive {
+        0% {
+            opacity: 0;
+        }
+        60% {
+            opacity: 0.7;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    </style>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const main = document.getElementById('main-content');
+        // Fade-in progresivo al cargar
+        void main.offsetWidth;
+        main.classList.add('fade-in-onload');
+        setTimeout(() => {
+            main.classList.remove('fade-in-onload');
+        }, 600);
+
+        // Fade-out al navegar
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                if (this.hostname === window.location.hostname) {
+                    e.preventDefault();
+                    main.classList.add('fade-out');
+                    setTimeout(() => {
+                        window.location = this.href;
+                    }, 300);
+                }
+            });
+        });
+    });
+    </script>
                 </div>
             </div>
         </div>
