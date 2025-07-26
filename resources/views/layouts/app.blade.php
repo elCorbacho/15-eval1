@@ -34,7 +34,7 @@
             </div>
         </div>
     </nav>
-    <div class="container py-5">
+    <div class="container py-5 mb-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card shadow-sm p-4">
@@ -42,10 +42,10 @@
                 </div>
             </div>
         </div>
-        <footer class="text-center text-muted mt-4">
-            <h5 class="fw-light">AC DEVops</h5>
-        </footer>
     </div>
+    <footer class="footer bg-white text-center text-muted fixed-bottom py-2 border-top shadow-sm">
+        <h5 class="fw-light mb-0">AC DEVops</h5>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

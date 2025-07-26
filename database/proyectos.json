@@ -1,5 +1,13 @@
 [
     {
+        "id": 1,
+        "nombre": "Sistema de Inventario",
+        "fecha_inicio": "2025-01-10",
+        "estado": "Activo",
+        "responsable": "Laura Méndez",
+        "monto": 15000
+    },
+    {
         "id": 2,
         "nombre": "App de Reservas",
         "fecha_inicio": "2025-02-05",
@@ -9,19 +17,19 @@
     },
     {
         "id": 3,
-        "nombre": "Web Corporativ4444a4",
+        "nombre": "Web Corporativa",
         "fecha_inicio": "2025-03-01",
         "estado": "Finalizado",
         "responsable": "Ana Torres",
-        "monto": "0909"
+        "monto": 9000
     },
     {
         "id": 4,
-        "nombre": "Plataforma E-learningg444ggggg",
+        "nombre": "Plataforma E-learning",
         "fecha_inicio": "2025-04-15",
         "estado": "Activo",
         "responsable": "Miguel Rojas",
-        "monto": "30000"
+        "monto": 30000
     },
     {
         "id": 5,
@@ -29,14 +37,46 @@
         "fecha_inicio": "2025-05-20",
         "estado": "Activo",
         "responsable": "Sofía Ramírez",
-        "monto": "250000000000"
+        "monto": 25000
     },
     {
         "id": 6,
-        "nombre": "090909",
-        "fecha_inicio": "2025-07-23",
-        "estado": "activo",
-        "responsable": "qwqw",
-        "monto": "10920909"
+        "nombre": "Gestor de Tareas",
+        "fecha_inicio": "2025-06-10",
+        "estado": "En desarrollo",
+        "responsable": "Pedro López",
+        "monto": 18000
+    },
+    {
+        "id": 7,
+        "nombre": "Portal de Clientes",
+        "fecha_inicio": "2025-07-01",
+        "estado": "Activo",
+        "responsable": "María Fernández",
+        "monto": 21000
+    },
+    {
+        "id": 8,
+        "nombre": "CRM Ventas",
+        "fecha_inicio": "2025-07-15",
+        "estado": "En espera",
+        "responsable": "Javier Morales",
+        "monto": 27000
+    },
+    {
+        "id": 9,
+        "nombre": "Intranet Corporativa",
+        "fecha_inicio": "2025-08-01",
+        "estado": "Activo",
+        "responsable": "Patricia Soto",
+        "monto": 32000
+    },
+    {
+        "id": 10,
+        "nombre": "Sistema de Reportes",
+        "fecha_inicio": "2025-08-20",
+        "estado": "Finalizado",
+        "responsable": "Andrés Vera",
+        "monto": 12000
     }
 ]
