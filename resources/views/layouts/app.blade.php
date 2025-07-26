@@ -6,22 +6,46 @@
     <title>@yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Welcome</h1>
-
-    <div class="mb-3">
-        <a href="{{ url('/proyectos') }}" class="btn btn-info">Obtener Proyectos</a>
-        <a href="{{ url('/proyectos/crear') }}" class="btn btn-success">Crear Proyecto</a>
-        <a href="{{ url('/proyectos/eliminar') }}" class="btn btn-danger">Eliminar Proyecto</a>
-        <a href="{{ url('/proyecto/buscar') }}" class="btn btn-warning">Buscar Proyecto</a>
-        <a href="{{ url('/proyectos/editar') }}" class="btn btn-secondary">Editar Proyecto</a>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="{{ url('/') }}">PROYECTOS IT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link @if(Request::is('proyectos')) active fw-bold @endif" href="{{ url('/proyectos') }}">Obtener Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @if(Request::is('proyectos/crear')) active fw-bold @endif" href="{{ url('/proyectos/crear') }}">Crear Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @if(Request::is('proyectos/eliminar')) active fw-bold @endif" href="{{ url('/proyectos/eliminar') }}">Eliminar Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @if(Request::is('proyecto/buscar')) active fw-bold @endif" href="{{ url('/proyecto/buscar') }}">Buscar Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @if(Request::is('proyectos/editar') || Request::is('proyectos/editar/*')) active fw-bold @endif" href="{{ url('/proyectos/editar') }}">Editar Proyecto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm p-4">
+                    <div>@yield('content')</div>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center text-muted mt-4">
+            <h5 class="fw-light">AC DEVops</h5>
+        </footer>
     </div>
-
-    <div>@yield('content')</div>
-
-    <h2>AC DEVops</h2>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
 </body>
 </html>
