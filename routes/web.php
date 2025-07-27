@@ -71,5 +71,6 @@ Route::get('', [ProyectoController::class, 'buscarProyecto']);
 
 //-----------------------------------------------------------------------------
 
-
+// Ruta para buscar un proyecto por ID
+Route::get('/proyecto/buscar', [ProyectoController::class, 'buscarProyecto']);
 
