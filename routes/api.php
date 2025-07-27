@@ -27,6 +27,21 @@ Route::patch('proyecto/{id}', [ProyectoController::class, 'update']);
 Route::delete('proyecto/{id}', [ProyectoController::class, 'delete']);
 
 
+//---------------------------------------
+// RUTAS TIPO API
+//---------------------------------------
+//get proyecto
+Route::get('proyecto', [ProyectoController::class, 'get']);
+//post
+Route::post('proyecto', [ProyectoController::class, 'post']);
+//delete por id
+Route::delete('proyecto/{id}', [ProyectoController::class, 'delete']);
+//patch por id
+Route::patch('proyecto/{id}', [ProyectoController::class, 'update']);
+//get por id
+//Route::get('proyecto/{id}', [ProyectoController::class, 'show']);
+//Rutas para el controlador ProyectoController
+
 
 //get por id
 //Route::get('proyecto/{id}', [ProyectoController::class, 'show']);

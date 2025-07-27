@@ -11,32 +11,11 @@ Route::get('/', function () {
     return redirect('/proyectos');
 });
 
-//---------------------------------------
-// RUTAS TIPO API
-//---------------------------------------
-//get proyecto
-Route::get('proyecto', [ProyectoController::class, 'get']);
-
-//post
-Route::post('proyecto', [ProyectoController::class, 'post']);
-
-//delete por id
-Route::delete('proyecto/{id}', [ProyectoController::class, 'delete']);
-
-//patch por id
-Route::patch('proyecto/{id}', [ProyectoController::class, 'update']);
-
-//get por id
-//Route::get('proyecto/{id}', [ProyectoController::class, 'show']);
-//Rutas para el controlador ProyectoController
-
-
 
 
 //---------------------------------------
 // RUTAS CON VISTAS
 //---------------------------------------
-
 // Ruta para listar todos los proyectos con GET
 Route::get('/proyectos', [ProyectoController::class, 'get']);
 
@@ -85,13 +64,10 @@ Route::patch('/proyectos/editar/{id}', [ProyectoController::class, 'update']);
 
 //-----------------------------------------------------------------------------
 
-
-
-
 //-----------------------------------------------------------------------------
 //RUT OBTENER UN PROYECTO POR ID VIA JSON
 //-----------------------------------------------------------------------------
-Route::get('/proyecto/buscar', [ProyectoController::class, 'buscarProyecto']);
+Route::get('', [ProyectoController::class, 'buscarProyecto']);
 
 //-----------------------------------------------------------------------------
 
