@@ -22,7 +22,7 @@ class ProyectoController extends Controller
 
 
 //----------------------------------------OK
-//CONTROLADOR PARA CREAR PROYECTO CON POST EN JSON 
+//CONTROLADOR PARA CREAR PROYECTO CON POST EN JSON
 //----------------------------------------
     public function post(Request $request)
     {
@@ -236,17 +236,5 @@ class ProyectoController extends Controller
         return view('buscar_proyecto', compact('proyecto', 'notFound'));
     }
 //----------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
