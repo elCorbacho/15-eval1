@@ -1,15 +1,7 @@
 [
     {
-        "id": 1,
-        "nombre": "Sistema de Inventario12121212",
-        "fecha_inicio": "2025-01-10",
-        "estado": "ActivoQQQQQ",
-        "responsable": "Laura Méndez",
-        "monto": "15000"
-    },
-    {
         "id": 2,
-        "nombre": "App de Reservas",
+        "nombre": "App de Reservas2233",
         "fecha_inicio": "2025-02-05",
         "estado": "En espera",
         "responsable": "Carlos Pérez",
@@ -86,5 +78,21 @@
         "estado": "TEST",
         "responsable": "TEST",
         "monto": "111111"
+    },
+    {
+        "id": 18,
+        "nombre": "testing final",
+        "fecha_inicio": "2025-07-27",
+        "estado": "activo",
+        "responsable": "ac",
+        "monto": "1922199"
+    },
+    {
+        "id": 19,
+        "nombre": "434",
+        "fecha_inicio": "2025-07-18",
+        "estado": "activo",
+        "responsable": "ac",
+        "monto": "98898"
     }
 ]
