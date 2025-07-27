@@ -13,15 +13,7 @@
         "fecha_inicio": "2025-02-05",
         "estado": "En espera",
         "responsable": "Carlos Pérez",
-        "monto": 22000
-    },
-    {
-        "id": 3,
-        "nombre": "Web Corporativa33",
-        "fecha_inicio": "2025-03-01",
-        "estado": "Finalizado",
-        "responsable": "Ana Torres",
-        "monto": "9000"
+        "monto": "22000"
     },
     {
         "id": 9,
@@ -86,5 +78,13 @@
         "estado": "87658765",
         "responsable": "87658765",
         "monto": "87657685"
+    },
+    {
+        "id": 17,
+        "nombre": "TEST",
+        "fecha_inicio": "2025-07-05",
+        "estado": "TEST",
+        "responsable": "TEST",
+        "monto": "111111"
     }
 ]
