@@ -67,7 +67,7 @@ Route::patch('/proyectos/editar/{id}', [ProyectoController::class, 'update']);
 //-----------------------------------------------------------------------------
 //RUT OBTENER UN PROYECTO POR ID VIA JSON
 //-----------------------------------------------------------------------------
-Route::get('', [ProyectoController::class, 'buscarProyecto']);
+//Route::get('', [ProyectoController::class, 'buscarProyecto']);
 
 //-----------------------------------------------------------------------------
 

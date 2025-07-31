@@ -60,22 +60,24 @@ class ProyectoController extends Controller
 
 
 
-//----------------------------------------OK
-//CONTROLADOR PARA OBTENER PROYECTOS CON GET EN JSON
-//----------------------------------------
-    public function get()
-    {
-        $ruta = base_path('database/proyectos.json');
-        $proyectos = [];
+public function get(Request $request)
+{
+    $ruta = base_path('database/proyectos.json');
+    $proyectos = [];
 
-        if (file_exists($ruta)) {
-            $json = file_get_contents($ruta);
-            $proyectos = json_decode($json, true);
-        }
-
-        return view('obtener_proyectos', compact('proyectos'));
+    if (file_exists($ruta)) {
+        $json = file_get_contents($ruta);
+        $proyectos = json_decode($json, true);
     }
-//----------------------------------------
+
+    // Si la solicitud espera JSON, devolver JSON
+    if ($request->expectsJson()) {
+        return response()->json($proyectos, 200);
+    }
+
+    // Si no, devolver la vista
+    return view('obtener_proyectos', compact('proyectos'));
+}
 
 
 

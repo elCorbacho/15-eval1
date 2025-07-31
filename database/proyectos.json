@@ -94,5 +94,13 @@
         "estado": "activo",
         "responsable": "ac",
         "monto": "98898"
+    },
+    {
+        "id": 20,
+        "nombre": "Nuevo Proyecto",
+        "fecha_inicio": "2025-08-01",
+        "estado": "activo",
+        "responsable": "Juan Pérez",
+        "monto": 150000
     }
 ]
